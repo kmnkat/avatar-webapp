@@ -11,7 +11,6 @@
   --display-font: "Sacramento", cursive;
   --decorative-font: "Yeseva One", cursive;
   --border-props: 2px solid var(--black);
-  --dotted-pattern-url: url("assets/images/patterns/dot-seamless-pattern.svg");
 
   font-size: 16px;
 
@@ -35,6 +34,9 @@ h6 {
 
 /* buttons */
 
+/* rectangle */
+/*  - regular */
+
 .btn-sqr {
   background-color: var(--blue-dark);
   font-size: 2rem;
@@ -46,11 +48,13 @@ h6 {
   box-shadow: var(--box-shadow-xsm) var(--black);
 }
 
-.btn-sqr:hover {
+.btn-sqr:hover,
+.circle-btn:hover {
   background-color: var(--blue-light);
 }
 
-.btn-sqr:active {
+.btn-sqr:active,
+.circle-btn:active {
   transform: var(--animation-push-transform);
   box-shadow: var(--box-shadow-xsm-pushed);
   transition: var(--animation-push-transform);
@@ -61,6 +65,7 @@ h6 {
   background-color: var(--white);
 }
 
+/* - large */
 .btn-sqr-lg {
   background-color: var(--pink);
   font-size: 2.5rem;
@@ -82,6 +87,31 @@ h6 {
   box-shadow: var(--box-shadow-xsm) var(--black);
   transition: var(--animation-push-transform);
 }
+/* -carousel */
+.carousel-sqr {
+  font-family: var(--decorative-font);
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
+  min-width: 10rem;
+}
+/* - carousel circle */
+
+.circle-btn {
+  max-width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0.5rem;
+  display: flex;
+  background-color: var(--blue-dark);
+  border: var(--border-props);
+  margin: 1rem;
+  box-shadow: var(--box-shadow-xsm) var(--black);
+}
+
+.carousel-btn-act {
+  background-color: var(--pink);
+}
 
 /* reset browser settings */
 * {
@@ -94,17 +124,18 @@ h6 {
 /* setting full browser width */
 html {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
 /* body */
 body {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   font-family: var(--main-font);
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 /* nav */
@@ -112,6 +143,7 @@ body {
 #logo img {
   height: 10vh;
   margin: 1rem;
+  min-height: 30%;
 }
 
 nav {
@@ -126,31 +158,61 @@ nav {
   background-size: 2rem 2rem;
   flex-direction: row;
   padding: 0 5rem;
+  top: 0;
 }
 
 .nav-container {
   width: 100%;
   box-shadow: var(--box-shadow-sm) var(--blue-dark);
+  position: relative;
+  top: 0;
+  margin-bottom: 3rem;
 }
 
 /* sections */
 
-/* about section flex and style */
-
-#about-section {
+/* about and creator flex */
+#about-section,
+#creator-area {
   width: 80%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
+/* overrride */
+#creator-area {
+  justify-content: space-evenly;
+}
+.choosing-btns {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  align-items: stretch;
+}
+
+/* creator-arrows */
+.carousel {
+  position: relative;
+}
+.carousel-arrows {
+  position: absolute;
+  z-index: 100;
+  top: 40rem;
+  left: -3rem;
+  width: 38rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* about section style */
 
 .texts {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  max-width: 60%;
   font-size: 3rem;
   padding: 1rem;
 }
@@ -172,8 +234,10 @@ nav {
 /* about img animation */
 
 .imgs {
-  position: relative;
-  right: 5rem;
+  align-self: center;
+  padding-right: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
 .img-container {
@@ -260,7 +324,6 @@ figure {
   left: 3.5rem;
   width: 100%;
   height: calc(100% + 2.5rem);
-
   border: var(--border-props);
   z-index: -1;
   /* pattern */
@@ -270,41 +333,110 @@ figure {
   background-size: 1.1rem 1.1rem;
 }
 
-/* graphic elements */
-.elements-div {
+/* creator style */
+
+/* -user img */
+.carousel-portrait {
+  display: flex;
+  width: 32rem;
+  height: 38rem;
+  border: var(--border-props);
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--white);
+}
+
+.carousel-choosing {
+  display: flex;
+  position: relative;
+  top: -2px;
   width: 100%;
-  position: absolute;
-  height: 100vh;
+  border: var(--border-props);
+  height: 7rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.img-to-choose {
+  display: flex;
+  height: 100%;
+  width: 7rem;
+  overflow: hidden;
+  padding: 1rem;
+  border-left: var(--border-props);
+}
+
+.img-to-choose:hover {
+  cursor: pointer;
+  background-color: var(--blue-light);
+  transition: background-color 0.2s linear;
+}
+
+.chosen-carousel-item {
+  background-color: var(--pink);
+}
+
+/* -text */
+.instruction-text {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+/* -btns area */
+
+.circle-btns {
+  display: flex;
+  margin: 0 2rem;
+}
+
+.rect-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.download-btn {
+  align-self: flex-end;
+  margin-top: 8rem;
+}
+
+/* graphic elements */
+/* -about section */
+.elements-div {
   overflow: hidden;
   z-index: -2;
 }
 
 #circle-el {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   width: 40rem;
   height: 40rem;
   border: 5rem solid var(--pink);
   border-radius: 50%;
-
   transform: translateY(20rem) translateX(20rem);
 }
 
 #dotted-el-bg-pink {
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0;
   width: 35%;
   height: 15%;
-
   background-image: radial-gradient(var(--pink) 4px, transparent 2px);
   background-position: 0 0, 1rem 1rem;
   background-size: 2rem 2rem;
 }
 
 #box-el-bg {
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0;
   width: 25rem;
   z-index: -3;
   display: flex;
@@ -328,21 +460,168 @@ figure {
   margin: 1rem;
 }
 
+/* -creator section */
+.dots-under-download {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: 28%;
+  height: 20%;
+  background-image: radial-gradient(var(--blue-light) 4px, transparent 2px);
+  background-position: 0 0, 1rem 1rem;
+  background-size: 2rem 2rem;
+}
+
+/* arrows */
+.arrow {
+  border: solid var(--black);
+  border-width: 0 1rem 1rem 0;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow:hover {
+  border: solid var(--blue-light);
+  border-width: 0 1rem 1rem 0;
+  transition: border 0.5s ease-in-out;
+}
+
 /* footer */
 p a:link,
 p a:visited {
   text-decoration: none;
-  color: white;
+  color: var(--white);
   background-color: var(--pink);
   padding: 0.1rem 0.3rem;
 }
 
 p a:hover {
-  background-color: black;
+  background-color: var(--black);
 }
 
 footer {
+  margin-top: -1rem;
   padding: 1rem;
-  position: fixed;
-  bottom: 0;
+  background-color: var(--white);
+  border-radius: 3rem;
+}
+
+/* media query */
+
+@media only screen and (max-width: 1650px) {
+  .texts {
+    font-size: 2rem;
+    display: flex;
+    padding-right: 5rem;
+  }
+  #about-section,
+  #creator-area {
+    width: 85%;
+  }
+  .btn-sqr-lg {
+    padding: 0.5rem 1.5rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 14px;
+  }
+  .texts {
+    font-size: 2em;
+  }
+
+  #about-section,
+  #creator-area {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #about-section,
+  #creator-area {
+    width: 90%;
+    height: initial;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 6rem 1rem;
+    margin: 2rem 0;
+  }
+
+  .choosing-btns {
+    min-height: initial;
+  }
+
+  :root {
+    font-size: 16px;
+  }
+
+  .texts {
+    font-size: 3rem;
+    min-width: 100%;
+    display: flex;
+    margin-bottom: 3rem;
+  }
+
+  .btn-sqr {
+    min-width: 12rem;
+  }
+  #logo {
+    max-width: 30%;
+    display: flex;
+  }
+  #logo > img {
+    width: 100%;
+    height: initial;
+  }
+  nav {
+    padding: 0 2rem 0 1rem;
+  }
+  .btn-sqr {
+    min-width: 12rem;
+  }
+
+  .download-btn {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+
+  nav {
+    padding: 2rem;
+  }
+  .btn-sqr {
+    min-width: 10rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .btn-sqr {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    min-width: 10rem;
+  }
+}
+
+/* 576px, 768px, 992px, and 1200px */
+
+.texts {
 }
