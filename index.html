@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar Webapp</title>
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Sacramento&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--navigation-->
+  <div class="nav-container">
+    <nav>
+      <div id="logo">
+        <img src="./assets/images/logo.png" alt="logo" />
+      </div>
+      <div id="nav-menu">
+        <a href="./index.html"
+          ><button class="btn-sqr active-sqr">HOME</button></a
+        >
+        <a href="./creator.html">
+          <button class="btn-sqr">CREATOR</button>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <body>
+    <div id="about-section">
+      <div class="texts">
+        <h1 id="slogan">Become an illustration!</h1>
+        <h3 id="description">
+          Make an illustrative avatar and share it with friends!
+        </h3>
+        <button class="btn-sqr-lg" id="cta">LETS'S CREATE!</button>
+      </div>
+      <div class="imgs">
+        <div class="img-container">
+          <div class="img-window-elements">
+            <div class="dot-window"></div>
+            <div class="dot-window"></div>
+            <div class="dot-window dot-decor"></div>
+          </div>
+          <div id="img-slides">
+            <figure>
+              <div class="slider-img-wrap">
+                <img src="./assets/images/sample1.png" alt="exemplary avatar" />
+              </div>
+              <div class="slider-img-wrap">
+                <img
+                  src="./assets/images/sample2-01.png"
+                  alt="exemplary avatar"
+                />
+              </div>
+              <div class="slider-img-wrap">
+                <img src="./assets/images/sample3.png" alt="exemplary avatar" />
+              </div>
+            </figure>
+          </div>
+          <div class="img-shadow"></div>
+        </div>
+      </div>
+    </div>
+    <!--decorative graphic elements-->
+    <div class="elements-div">
+      <div id="circle-el"></div>
+      <div id="dotted-el-bg-pink"></div>
+      <div id="box-el-bg">
+        <div class="square-el"></div>
+        <div class="fake-square"></div>
+        <div class="fake-square"></div>
+        <div class="square-el"></div>
+        <div class="square-el"></div>
+        <div class="fake-square"></div>
+        <div class="square-el"></div>
+        <div class="square-el"></div>
+        <div class="square-el"></div>
+        <div class="square-el"></div>
+      </div>
+    </div>
+  </body>
+</html>
