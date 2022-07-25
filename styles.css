@@ -205,6 +205,7 @@ nav {
 /* creator-arrows */
 .carousel {
   position: relative;
+  width: 32rem;
 }
 .carousel-arrows {
   position: absolute;
@@ -363,18 +364,20 @@ figure {
   width: 100%;
   border: var(--border-props);
   height: 7rem;
-  align-items: center;
-  justify-content: center;
   background-color: var(--white);
 }
 
 .img-to-choose {
   display: flex;
-  height: 100%;
-  width: 7rem;
+  justify-content: center;
+  align-items: center;
+  min-width: 7rem;
   overflow: hidden;
   padding: 1rem;
   border-left: var(--border-props);
+}
+.img-to-choose:first-of-type {
+  border: none;
 }
 
 .img-to-choose:hover {
@@ -384,11 +387,33 @@ figure {
 }
 
 .img-to-choose > img {
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .chosen-carousel-item {
   background-color: var(--pink);
+}
+
+/* controlling carousel img flow */
+.not-to-scroll {
+  border: 5px solid red;
+  position: relative;
+  display: block;
+}
+
+.to-scroll {
+  overflow: auto;
+  width: 100%;
+  scroll-behavior: smooth;
+  position: relative;
+  scrollbar-width: none;
+}
+
+.to-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 /* -text */
