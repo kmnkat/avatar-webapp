@@ -1,0 +1,58 @@
+{
+  "outfit": [
+    {
+      "url": "./assets/images/example1.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example2.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example3.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example4.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example5.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example6.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example7.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example8.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example9.svg",
+      "alt": "some outfit"
+    }
+  ],
+  "hair": [
+    {
+      "url": "./assets/images/other1.svg",
+      "alt": "some hair"
+    },
+    {
+      "url": "./assets/images/other2.svg",
+      "alt": "some hair"
+    },
+    {
+      "url": "./assets/images/other3.svg",
+      "alt": "some hair"
+    },
+    {
+      "url": "./assets/images/other4.svg",
+      "alt": "some hair"
+    }
+  ]
+}
