@@ -1,0 +1,29 @@
+{
+  "name": "avatar-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmnkat/avatar-webapp.git"
+  },
+  "author": "kmnkat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmnkat/avatar-webapp/issues"
+  },
+  "homepage": "https://github.com/kmnkat/avatar-webapp#readme",
+  "dependencies": {
+    "ajax": "^0.0.4",
+    "dom-to-image": "^2.6.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "file-saver": "^2.0.5",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar Webapp</title>
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Sacramento&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--navigation-->
+  <div class="nav-container">
+    <nav>
+      <div id="logo">
+        <img src="/images/logo.png" alt="logo" />
+      </div>
+      <div id="nav-menu">
+        <a href="/"><button class="btn-sqr">HOME</button></a>
+        <a href="creator">
+          <button class="btn-sqr active-sqr">CREATOR</button>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <body>
+    <div id="creator-area">
+      <!--carousel-->
+      <div class="carousel">
+        <!--arrpows-->
+        <div class="carousel-arrows">
+          <i class="arrow left" id="arrow-l"></i>
+          <i class="arrow right" id="arrow-r"></i>
+        </div>
+        <!--image-->
+        <div class="carousel-portrait">
+          <div class="portrait-content" id="user-image">
+            <div class="hair">
+              <img src="images/hair-01.svg" />
+            </div>
+            <div class="body">
+              <img src="images/outfit-01.svg" />
+            </div>
+            <div class="face">
+              <img src="images/face-01.svg" />
+              <div class="mouth">
+                <img src="images/mouth-02.svg" />
+              </div>
+              <div class="eyes">
+                <img src="images/eyes-01.svg" />
+              </div>
+              <div class="nose">
+                <img src="images/nose-01.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="not-to-scroll">
+          <div class="carousel-choosing to-scroll">
+            <!--RENDERING-->
+          </div>
+        </div>
+      </div>
+      <!--buttons-->
+
+      <div class="choosing-btns">
+        <div class="instruction-text">
+          <h3 id="instruction-text">Choose your</h3>
+          <span id="new-instruction">style</span>
+        </div>
+        <div class="circle-btns" id="circle-btns">
+          <button class="circle-btn carousel-btn-act" id="hair">
+            <img
+              src="images/icons/hair-icon.svg"
+              alt="hair icon"
+              class="icon-img"
+            />
+          </button>
+          <button class="circle-btn" id="face">
+            <img
+              src="images/icons/head-icon.svg"
+              alt="face icon"
+              class="icon-img"
+            />
+          </button>
+          <button class="circle-btn" id="eyes">
+            <img
+              src="images/icons/eye-icon.svg"
+              alt="eyes icon"
+              class="icon-img"
+            />
+          </button>
+          <button class="circle-btn" id="nose">
+            <img
+              src="images/icons/nose-icon.svg"
+              alt="nose icon"
+              class="icon-img"
+            />
+          </button>
+          <button class="circle-btn" id="mouth">
+            <img
+              src="images/icons/mouth-icon.svg"
+              alt="mouth icon"
+              class="icon-img"
+            />
+          </button>
+        </div>
+        <div class="rect-btns">
+          <button class="btn-sqr carousel-sqr" id="outfit">outfit</button>
+          <button class="btn-sqr carousel-sqr" id="accessories">
+            accessories
+          </button>
+        </div>
+        <div class="download-btn">
+          <button class="btn-sqr-lg" id="download-btn">DONE! DOWNLOAD</button>
+        </div>
+      </div>
+    </div>
+
+    <!--decorative graphic elements-->
+    <div class="elements-div">
+      <div class="dots-under-download"></div>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <p>
+        CFG 2022, illustrations by
+        <a href="https://freepik.com" target="_blank">freepik.com</a>
+      </p>
+    </footer>
+    <script src="/jquery/jquery.js"></script>
+    <script src="/filesaver/FileSaver.js"></script>
+    <script src="/domtoimage/dom-to-image.min.js"></script>
+
+    <script src="js/script.js" type="text/javascript"></script>
+  </body>
+</html>

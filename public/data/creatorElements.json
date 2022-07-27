@@ -1,0 +1,54 @@
+{
+  "outfit": [
+    {
+      "url": "images/hair-01.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example2.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example3.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example4.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example5.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example6.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example7.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example8.svg",
+      "alt": "some outfit"
+    },
+    {
+      "url": "./assets/images/example9.svg",
+      "alt": "some outfit"
+    }
+  ],
+  "hair": [
+    {
+      "url": "images/hair-01.svg",
+      "alt": "hair: bun"
+    },
+    {
+      "url": "images/hair-02.svg",
+      "alt": "hair: medium length, straight"
+    },
+    {
+      "url": "images/hair-03.svg",
+      "alt": "hair: medium length"
+    }
+  ]
+}
