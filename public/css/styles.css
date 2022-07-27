@@ -448,7 +448,7 @@ figure {
   min-width: 7rem;
   height: 7rem;
   overflow: hidden;
-  padding: 1rem;
+
   border-left: var(--border-props);
 }
 .img-to-choose:first-of-type {
@@ -461,8 +461,22 @@ figure {
   transition: background-color 0.2s linear;
 }
 
+.nose-miniature > img,
+.mouth-miniature > img {
+  width: 35rem;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+}
+.nose-miniature,
+.mouth-miniature {
+  display: grid;
+  width: 7rem;
+  height: 100%;
+}
+
 .chosen-carousel-item {
-  background-color: var(--pink-ligt) !important;
+  background-color: var(--blue-light) !important;
 }
 
 /* controlling carousel img flow */
