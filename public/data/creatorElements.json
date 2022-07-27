@@ -1,54 +1,87 @@
 {
-  "outfit": [
-    {
-      "url": "images/hair-01.svg",
-      "alt": "some outfit"
-    },
-    {
-      "url": "./assets/images/example2.svg",
-      "alt": "some outfit"
-    },
-    {
-      "url": "./assets/images/example3.svg",
-      "alt": "some outfit"
-    },
-    {
-      "url": "./assets/images/example4.svg",
-      "alt": "some outfit"
-    },
-    {
-      "url": "./assets/images/example5.svg",
-      "alt": "some outfit"
-    },
-    {
-      "url": "./assets/images/example6.svg",
-      "alt": "some outfit"
-    },
-    {
-      "url": "./assets/images/example7.svg",
-      "alt": "some outfit"
-    },
-    {
-      "url": "./assets/images/example8.svg",
-      "alt": "some outfit"
-    },
-    {
-      "url": "./assets/images/example9.svg",
-      "alt": "some outfit"
-    }
-  ],
   "hair": [
     {
-      "url": "images/hair-01.svg",
+      "url": "images/creator/hair-03.svg",
+      "alt": "hair: medium thick"
+    },
+    {
+      "url": "images/creator/hair-01.svg",
       "alt": "hair: bun"
     },
     {
-      "url": "images/hair-02.svg",
-      "alt": "hair: medium length, straight"
+      "url": "images/creator/hair-02.svg",
+      "alt": "hair: medium straight"
+    }
+  ],
+  "outfit": [
+    {
+      "url": "images/creator/outfit-01.svg",
+      "alt": "outfit: tank and jewelry"
     },
     {
-      "url": "images/hair-03.svg",
-      "alt": "hair: medium length"
+      "url": "images/creator/outfit-02.svg",
+      "alt": "outfit: simple sweater"
+    },
+    {
+      "url": "images/creator/outfit-03.svg",
+      "alt": "outfit: dottet shirt"
+    }
+  ],
+  "mouth": [
+    {
+      "url": "images/creator/mouth-02.svg",
+      "alt": "mouth: simple smile"
+    },
+    {
+      "url": "images/creator/mouth-01.svg",
+      "alt": "mouth: "
+    },
+
+    {
+      "url": "images/creator/mouth-03.svg",
+      "alt": "mouth: "
+    }
+  ],
+  "eyes": [
+    {
+      "url": "images/creator/eyes-01.svg",
+      "alt": "eyes: left, small brows"
+    },
+    {
+      "url": "images/creator/eyes-02.svg",
+      "alt": "eyes: right, thick brows"
+    },
+    {
+      "url": "images/creator/eyes-03.svg",
+      "alt": "eyes: left, deep-set"
+    }
+  ],
+  "face": [
+    {
+      "url": "images/creator/face-01.svg",
+      "alt": "face: round, pircing"
+    },
+    {
+      "url": "images/creator/face-02.svg",
+      "alt": "face: CHANGE"
+    },
+    {
+      "url": "images/creator/face-03.svg",
+      "alt": "face: round"
+    }
+  ],
+  "nose": [
+    {
+      "url": "images/creator/nose-01.svg",
+      "alt": "nose: round"
+    },
+    {
+      "url": "images/creator/nose-02.svg",
+      "alt": "nose: small straight"
+    },
+    {
+      "url": "images/creator/nose-03.svg",
+      "alt": "nose: straight"
     }
   ]
 }

@@ -20,7 +20,7 @@
   <div class="nav-container">
     <nav>
       <div id="logo">
-        <img src="/images/logo.png" alt="logo" />
+        <img src="/images/logo/logo.png" alt="logo" />
       </div>
       <div id="nav-menu">
         <a href="/"><button class="btn-sqr">HOME</button></a>
@@ -42,23 +42,13 @@
         <!--image-->
         <div class="carousel-portrait">
           <div class="portrait-content" id="user-image">
-            <div class="hair">
-              <img src="images/hair-01.svg" />
-            </div>
-            <div class="body">
-              <img src="images/outfit-01.svg" />
-            </div>
+            <div class="hair" id="hair-creator"></div>
+            <div class="outfit" id="outfit-creator"></div>
             <div class="face">
-              <img src="images/face-01.svg" />
-              <div class="mouth">
-                <img src="images/mouth-02.svg" />
-              </div>
-              <div class="eyes">
-                <img src="images/eyes-01.svg" />
-              </div>
-              <div class="nose">
-                <img src="images/nose-01.svg" />
-              </div>
+              <div class="face-image" id="face-creator"></div>
+              <div class="mouth" id="mouth-creator"></div>
+              <div class="eyes" id="eyes-creator"></div>
+              <div class="nose" id="nose-creator"></div>
             </div>
           </div>
         </div>
@@ -73,7 +63,7 @@
       <div class="choosing-btns">
         <div class="instruction-text">
           <h3 id="instruction-text">Choose your</h3>
-          <span id="new-instruction">style</span>
+          <span id="new-instruction">hair</span>
         </div>
         <div class="circle-btns" id="circle-btns">
           <button class="circle-btn carousel-btn-act" id="hair">

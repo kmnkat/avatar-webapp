@@ -31,6 +31,12 @@ app.use(
   express.static(__dirname + "/node_modules/dom-to-image/dist/")
 );
 
+const data = require("./public/data/chosenElements.json");
+
+app.get("/data", function (req, res) {
+  res.json(data);
+});
+
 // //fetching data
 
 // const fs = require("fs");

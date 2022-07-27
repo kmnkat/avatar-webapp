@@ -5,6 +5,7 @@
   --blue-light: #aad4f1;
   --blue-dark: #5997d0;
   --pink: #dc8582;
+  --pink-ligt: #f8c4c2;
   --black: #000;
   --white: #fff;
   --main-font: "Roboto Mono", monospace;
@@ -141,7 +142,7 @@ body {
 /* nav */
 
 #logo img {
-  height: 10vh;
+  height: 5rem;
   margin: 1rem;
   min-height: 30%;
 }
@@ -264,9 +265,8 @@ nav {
 
 figure {
   position: relative;
-  left: -30px;
+  left: 0;
   width: 350%;
-
   animation: 30s slide infinite;
   animation-delay: 2s;
 }
@@ -274,31 +274,31 @@ figure {
 .slider-img-wrap {
   position: relative;
   display: inline-flex;
-
   flex-direction: row;
+  top: 3rem;
 }
 
 .slider-img-wrap img {
-  width: 50%;
+  width: 30rem;
   height: 90%;
   flex: 90%;
 }
 
 @keyframes slide {
   0% {
-    left: -30px;
+    left: 0;
   }
   25% {
-    left: -120%;
+    left: -105%;
   }
   50% {
-    left: -230%;
+    left: -205%;
   }
   75% {
-    left: -120%;
+    left: -105%;
   }
   100% {
-    left: -30px;
+    left: 0;
   }
 }
 
@@ -374,7 +374,7 @@ figure {
   z-index: 1;
 }
 
-.body {
+.outfit {
   position: absolute;
 
   height: 21rem;
@@ -393,20 +393,29 @@ figure {
   z-index: 2;
 }
 
+.face-image {
+  position: absolute;
+  height: 19rem;
+  width: 100%;
+
+  left: 0;
+  z-index: 2;
+}
+
 .eyes {
   position: absolute;
   height: 5rem;
   width: 100%;
   top: 5rem;
   left: 0;
-  z-index: 3;
+  z-index: 5;
 }
 
 .nose {
   position: absolute;
   height: 5rem;
   width: 100%;
-  top: 7rem;
+  top: 7.5rem;
   left: 0;
   z-index: 3;
 }
@@ -452,15 +461,8 @@ figure {
   transition: background-color 0.2s linear;
 }
 
-.img-to-choose-item {
-  min-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
 .chosen-carousel-item {
-  background-color: var(--pink) !important;
+  background-color: var(--pink-ligt) !important;
 }
 
 /* controlling carousel img flow */
@@ -745,6 +747,17 @@ footer {
     font-size: 1.5rem;
     padding: 0.5rem 1.5rem;
     min-width: 10rem;
+  }
+  nav {
+    padding: 0.5rem;
+  }
+
+  .carousel-arrows {
+    left: -2rem;
+    width: 36rem;
+  }
+  .download-btn {
+    margin-right: 3rem;
   }
 }
 
