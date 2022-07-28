@@ -4,7 +4,6 @@ let chosenCategory = "hair";
 function initialData() {
   console.log("initialization");
   //setting initial data for the first use
-  creatingFirstLocalStorage();
 
   for (const key in localStorage) {
     //setting portraits elements (based on local storage)
@@ -12,16 +11,6 @@ function initialData() {
       creatingImgByGivenAlt(localStorage.getItem(key), key);
     }
   }
-}
-//function for initial data for the first use from json file
-function creatingFirstLocalStorage() {
-  $.getJSON("./data/chosenElements.json", function (chosenItems) {
-    $.each(chosenItems, function (key, value) {
-      if (!window.localStorage.getItem(key)) {
-        window.localStorage.setItem(key, value);
-      }
-    });
-  });
 }
 
 //function to create element based on limited data from the local storage or json file

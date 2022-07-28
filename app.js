@@ -30,25 +30,3 @@ app.use(
   "/domtoimage",
   express.static(__dirname + "/node_modules/dom-to-image/dist/")
 );
-
-const data = require("./public/data/chosenElements.json");
-
-app.get("/data", function (req, res) {
-  res.json(data);
-});
-
-// //fetching data
-
-// const fs = require("fs");
-
-// fs.readFile(
-//   __dirname + "/public/data/creatorElements.json",
-//   "utf8",
-//   (err, jsonString) => {
-//     if (err) {
-//       console.log("File read failed:", err);
-//       return;
-//     }
-//     console.log("File data:", jsonString);
-//   }
-// );

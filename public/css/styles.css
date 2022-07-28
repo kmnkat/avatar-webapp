@@ -6,7 +6,7 @@
   --blue-dark: #5997d0;
   --pink: #dc8582;
   --pink-ligt: #f8c4c2;
-  --black: #000;
+  --black: #1a1313;
   --white: #fff;
   --main-font: "Roboto Mono", monospace;
   --display-font: "Sacramento", cursive;
@@ -374,6 +374,16 @@ figure {
   z-index: 1;
 }
 
+.accessories {
+  position: absolute;
+
+  height: 26rem;
+  width: 100%;
+  top: 4rem;
+  left: 0;
+  z-index: 7;
+}
+
 .outfit {
   position: absolute;
 
@@ -388,7 +398,7 @@ figure {
   position: absolute;
   height: 19rem;
   width: 100%;
-  top: 4rem;
+  top: 4.5rem;
   left: 0;
   z-index: 2;
 }
@@ -446,7 +456,7 @@ figure {
   align-items: center;
   position: relative;
   min-width: 7rem;
-  height: 7rem;
+  height: 100%;
   overflow: hidden;
 
   border-left: var(--border-props);
@@ -776,3 +786,31 @@ footer {
 }
 
 /* 576px, 768px, 992px, and 1200px */
+
+@media only screen and (max-width: 430px) {
+  :root {
+    font-size: 10px;
+  }
+
+  .btn-sqr {
+    min-width: 15rem;
+  }
+  nav {
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  #slogan {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  :root {
+    font-size: 8px;
+  }
+  .btn-sqr {
+    min-width: 10rem;
+  }
+  .arrow.left {
+    border-color: transparent;
+  }
+}

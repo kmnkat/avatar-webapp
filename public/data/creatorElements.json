@@ -11,6 +11,27 @@
     {
       "url": "images/creator/hair-02.svg",
       "alt": "hair: medium straight"
+    },
+    {
+      "url": "images/creator/hair-04.svg",
+      "alt": "hair: court, wavy hairstyle"
+    },
+    {
+      "url": "images/creator/hair-05.svg",
+      "alt": "hair: very curly, court, 90s look"
+    },
+    {
+      "url": "images/creator/hair-06.svg",
+      "alt": "hair: court, faux hawk"
+    },
+
+    {
+      "url": "images/creator/hair-08.svg",
+      "alt": "hair: bob haircut"
+    },
+    {
+      "url": "images/creator/hair-09.svg",
+      "alt": "hair: long straight"
     }
   ],
   "outfit": [
@@ -24,22 +45,31 @@
     },
     {
       "url": "images/creator/outfit-03.svg",
-      "alt": "outfit: dottet shirt"
+      "alt": "outfit: dotted shirt"
+    },
+
+    {
+      "url": "images/creator/outfit-05.svg",
+      "alt": "outfit: no clothes"
     }
   ],
   "mouth": [
     {
       "url": "images/creator/mouth-02.svg",
-      "alt": "mouth: simple smile"
-    },
-    {
-      "url": "images/creator/mouth-01.svg",
-      "alt": "mouth: "
+      "alt": "mouth: simple smile, center"
     },
 
     {
       "url": "images/creator/mouth-03.svg",
-      "alt": "mouth: "
+      "alt": "mouth: simple round smile"
+    },
+    {
+      "url": "images/creator/mouth-04.svg",
+      "alt": "mouth: to left, simple smile"
+    },
+    {
+      "url": "images/creator/mouth-05.svg",
+      "alt": "mouth: wide smile"
     }
   ],
   "eyes": [
@@ -54,6 +84,19 @@
     {
       "url": "images/creator/eyes-03.svg",
       "alt": "eyes: left, deep-set"
+    },
+    {
+      "url": "images/creator/eyes-04.svg",
+      "alt": "eyes: left, blue, thick brows"
+    },
+
+    {
+      "url": "images/creator/eyes-06.svg",
+      "alt": "eyes: right, up, medium brows"
+    },
+    {
+      "url": "images/creator/eyes-07.svg",
+      "alt": "eyes: left, bushy brows"
     }
   ],
   "face": [
@@ -63,11 +106,19 @@
     },
     {
       "url": "images/creator/face-02.svg",
-      "alt": "face: CHANGE"
+      "alt": "face: round, bun, earrings"
     },
     {
       "url": "images/creator/face-03.svg",
       "alt": "face: round"
+    },
+    {
+      "url": "images/creator/face-04.svg",
+      "alt": "face: wide, elegant bun"
+    },
+    {
+      "url": "images/creator/face-05.svg",
+      "alt": "face: wide, curly bun"
     }
   ],
   "nose": [
@@ -82,6 +133,36 @@
     {
       "url": "images/creator/nose-03.svg",
       "alt": "nose: straight"
+    },
+    {
+      "url": "images/creator/nose-04.svg",
+      "alt": "nose: straight, medium, down"
+    },
+    {
+      "url": "images/creator/nose-05.svg",
+      "alt": "nose: very straight, big"
+    },
+    {
+      "url": "images/creator/nose-06.svg",
+      "alt": "nose: fleshy"
+    }
+  ],
+  "accessories": [
+    {
+      "url": "images/creator/acc-none.svg",
+      "alt": "accessories: none"
+    },
+    {
+      "url": "images/creator/acc-01.svg",
+      "alt": "accessories: round glasses"
+    },
+    {
+      "url": "images/creator/acc-02.svg",
+      "alt": "accessories: necklace"
+    },
+    {
+      "url": "images/creator/acc-03.svg",
+      "alt": "accessories: scarf"
     }
   ]
 }
