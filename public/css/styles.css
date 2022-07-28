@@ -228,12 +228,12 @@ nav {
   padding: 1rem;
 }
 
-#slogan {
+.slogan {
   text-shadow: 0.05em 0.05em 0 var(--blue-light);
   margin-bottom: 2rem;
 }
 
-#description {
+.description {
   color: var(--blue-dark);
   margin-bottom: 3.5rem;
 }
@@ -739,9 +739,6 @@ footer {
   nav {
     padding: 0 2rem 0 1rem;
   }
-  .btn-sqr {
-    min-width: 12rem;
-  }
 
   .download-btn {
     margin-top: 2rem;
@@ -768,9 +765,7 @@ footer {
   }
 
   .btn-sqr {
-    font-size: 1.5rem;
     padding: 0.5rem 1.5rem;
-    min-width: 10rem;
   }
   nav {
     padding: 0.5rem;
@@ -799,7 +794,7 @@ footer {
     flex-direction: column;
     padding-bottom: 2rem;
   }
-  #slogan {
+  .slogan {
     font-size: 5rem;
   }
 }
